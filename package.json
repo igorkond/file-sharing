@@ -2,14 +2,14 @@
   "name": "file-sharing",
   "version": "1.0.0",
   "description": "A file sharing service",
-  "main": "index.js",
+  "main": "./dist/index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "build": "tsc -p tsconfig.json"
   },
   "keywords": [],
   "author": "igorkond",
   "license": "MIT",
-  "type": "commonjs",
+  "type": "module",
   "devDependencies": {
     "@types/node": "^24.10.0",
     "typescript": "^5.9.3"
