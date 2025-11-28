@@ -88,7 +88,7 @@ const server = http.createServer(async function(request: InstanceType<typeof htt
 			response.end();
 		}catch(e: unknown){
 			response.writeHead(400, {'Content-Type': 'text/plain'});
-			response.end(String(e));
+			response.end('Не удалось загрузить файл. Эта ошибка никогда не должна возникнуть');
 		}
 		
 	}else if(pathname === '/files' && method === 'get'){
@@ -101,7 +101,7 @@ const server = http.createServer(async function(request: InstanceType<typeof htt
 			response.end(file);
 		}catch(e: unknown){
 			response.writeHead(400, {'Content-Type': 'text/plain'});
-			response.end(String(e));
+			response.end('Данная ссылка истекла и больше не работает');
 		}
 		
 	}else if(pathname === '/' && method === 'get'){
