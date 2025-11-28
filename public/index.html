@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Сервис обмена файлами</title>
+		<script src="/script.js" type="module"></script>
+		<link href="/styles.css" rel="stylesheet">
+		<link rel="icon" href="/favicon.ico" type="image/x-icon">
+	</head>
+	<body>
+		<div class="container">
+			<h2>Сервис обмена файлами</h2>
+			
+			<div class="form-group">
+				<input type="file" id="fileInput">
+			</div>
+
+			<div class="form-group">
+				<button id="uploadFileButton" type="button">Загрузить файл</button>
+				<button id="abortUploadButton" type="button" disabled>Отмена</button>
+			</div>
+
+			<progress id="progressBar" value="0" max="100"></progress>
+			<span id="status"></span>
+			<p id="loadedAndTotal"></p>
+			<div id="displayedLinkToFile"></div>
+		</div>
+	</body>
+</html>

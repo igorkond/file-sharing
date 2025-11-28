@@ -11,7 +11,12 @@
   "license": "MIT",
   "type": "module",
   "devDependencies": {
-    "@types/node": "^24.10.0",
+    "@types/content-disposition": "^0.5.9",
+    "@types/node": "^24.10.1",
     "typescript": "^5.9.3"
+  },
+  "dependencies": {
+    "content-disposition": "^1.0.1",
+    "sanitize-filename": "^1.6.3"
   }
 }
